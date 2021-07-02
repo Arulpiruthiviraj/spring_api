@@ -6,15 +6,15 @@ import com.aruldailycode.springbootapi.error.DepartmentNotFoundException;
 import java.util.List;
 
 public interface DepartmentService {
-   public  Department saveDepartment(Department department);
+    public Department saveDepartment(Department department);
 
-   public List getDepartmentList();
+    public List getDepartmentList();
 
-  public Department getDepartmentById(Long departmentId) throws DepartmentNotFoundException;
+    public Department getDepartmentById(Long departmentId) throws DepartmentNotFoundException;
 
-  public void deleteDepartmentById(Long departmentId);
+    public void deleteDepartmentById(Long departmentId);
 
-   public Department updateDepartment(Long departmentId, Department department);
+    public Department updateDepartment(Long departmentId, Department department);
 
-     Department getDepartmentByName(String departmentName);
+    Department getDepartmentByName(String departmentName);
 }

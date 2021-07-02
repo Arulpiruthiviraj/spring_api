@@ -21,6 +21,8 @@ public class DepartmentController {
 
     private final Logger LOGGER =
             LoggerFactory.getLogger(DepartmentController.class);
+
+
     @PostMapping("")
     public Department saveDepartment(@Valid @RequestBody Department department) {
         LOGGER.info("Saving the Department");
@@ -47,7 +49,8 @@ public class DepartmentController {
     }
 
     @PutMapping("/{id}")
-    public Department updateDepartment(@PathVariable("id") Long departmentId, @RequestBody Department department) {
+    public Department updateDepartment(@PathVariable("id") Long departmentId, @RequestBody Department
+            department) {
         LOGGER.info("Update the Department");
         return departmentService.updateDepartment(departmentId, department);
     }
@@ -57,5 +60,6 @@ public class DepartmentController {
         LOGGER.info("get department by name");
         return departmentService.getDepartmentByName(departmentName);
     }
+
 
 }

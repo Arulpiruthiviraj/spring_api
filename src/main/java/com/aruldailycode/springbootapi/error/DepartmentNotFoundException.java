@@ -1,6 +1,6 @@
 package com.aruldailycode.springbootapi.error;
 
-public class DepartmentNotFoundException extends Exception{
+public class DepartmentNotFoundException extends Exception {
     public DepartmentNotFoundException() {
         super();
     }
